@@ -1,0 +1,4 @@
+azul: 0000d9
+rosa: ff76bc
+amarillo: ffff10
+blanco: ffffff
