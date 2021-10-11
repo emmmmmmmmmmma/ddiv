@@ -1,0 +1,246 @@
+/*** Imports ***/
+@font-face {
+  font-family: "FrutigerBlack";
+  src: url("./fonts/FrutigerLTStd-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FrutigerBlackCn";
+  src: url("./fonts/FrutigerLTStd-BlackCn.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FrutigerBold";
+  src: url("./fonts/FrutigerLTStd-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FrutigerItalic";
+  src: url("./fonts/FrutigerLTStd-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FrutigerLight";
+  src: url("./fonts/FrutigerLTStd-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Frutiger";
+  src: url("./fonts/FrutigerLTStd-Roman.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Glysa";
+  src: url("./fonts/glysa-medium.woff2") format("woff2");
+}
+
+/*** Design tokens ***/
+:root {
+  --clr-primario: #0000d9;
+  --clr-primario-claro: #2323e6;
+  --clr-primario-oscuro: #0606b0;
+  --clr-secundario: #ff76bc;
+  --clr-secundario-claro: #f8afd4;
+  --clr-secundario-oscuro: #d53a89;
+  --clr-terciario: #ffff10;
+  --clr-terciario-claro: #ff6f00;
+  --clr-terciario-oscuro: #ff6f00;
+  --ff-titulos: "Glysa";
+  --ff-body: "Frutiger";
+  --ff-black: "FrutigerBlack";
+  --ff-blackcn: "FrutigerBlackCn";
+  --ff-bold: "FrutigerBold";
+  --ff-italic: "FrutigerItalic";
+  --ff-light: "FrutigerLight";
+  --h1: 49px;
+  --h2: 38px;
+  --h3: 31px;
+  --h4: 27px;
+  --h5: 20px;
+  --h6: 16px;
+}
+
+/*** Reset ***/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+li {
+  padding-inline: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+/*** Base ***/
+body {
+  font-family: var(--ff-body);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-titulos);
+}
+/* Typescale */
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+}
+
+/* Base */
+body {
+  background-color: var(--clr-primario-claro);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Menu */
+
+.menu ul {
+  display: flex;
+}
+.menu__logo {
+}
+.menu__link {
+}
+/* menu */
+.nav {
+  background-color: #ffffff;
+}
+
+.nav ul {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav ul a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Glysa";
+  font-size: 13px;
+  color: var(--clr-primario-claro);
+  padding: 10px;
+  line-height: 2;
+}
+
+.nav ul e {
+  list-style: none;
+  text-decoration: none;
+  font-family: "FrutigerBold";
+  font-size: 20px;
+  color: #ff76bc;
+  padding: 10px;
+  line-height: 2;
+}
+
+/* hero */
+.hero {
+  display: grid;
+  place-content: center;
+  gap: 0.1px;
+  background-color: var(--clr-primario-claro);
+  height: 560px;
+  /*border: 2px solid white;*/
+  position: relative;
+}
+
+.hero__titulo {
+  text-align: center;
+  color: white;
+  font-family: "Glysa";
+  font-size: 130px;
+}
+
+.hero__slogan {
+  text-align: center;
+  color: white;
+  font-size: 14.7px;
+  line-height: 10px;
+  font-family: "Frutiger";
+}
+
+.hero__btn {
+  font-family: "Glysa";
+  font-size: 16.6px;
+  color: var(--clr-primario-claro);
+  height: 120px;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.hero__btn.right {
+  background-image: url("https://res.cloudinary.com/djfu7akxy/image/upload/v1631559083/final4_kq3t0o.jpg");
+  bottom: 30px;
+  right: 30px;
+  position: fixed;
+}
+
+.hero__btn.left {
+  background-image: url("https://res.cloudinary.com/djfu7akxy/image/upload/v1631559091/final8_qm3axu.jpg");
+  left: 30px;
+  top: 30px;
+}
+
+/* noticias */
+
+.noticias {
+}
+.lista-noticias {
+}
+.lista-noticias li {
+}
+
+.lista-noticias li img {
+  border-radius: 400px;
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+}
+
+.lista-noticias li h3 {
+  font-family: Glysa;
+  font-size: 8;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0 2px;
+}
+
+.lista-noticias li p {
+  font-family: frutiger;
+  font-size: 7;
+  color: #ffffff;
+  text-align: center;
+}
